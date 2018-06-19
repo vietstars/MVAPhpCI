@@ -1,0 +1,130 @@
+	    // fetch("http://dev.vn/api/home/users",{
+     //      	method: "GET",
+     //      	headers: {
+     //          	'Accept': 'application/json',
+     //            'Content-Type': ' application/json',
+     //            'X-API-KEY': 'CODEX@123',
+     //            'Authorization': 'Basic YWRtaW46MTIzNA==',
+     //        },
+     //    })
+	    // .then(res => res.json())
+	    // .then(
+	    //     (result) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         users: result
+	    //       });
+	    //     },
+	    //     (error) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         error
+	    //       });
+	    //     }
+	    // )
+	    // fetch("http://dev.vn/api/home/users",{
+     //      	method: "POST",
+     //      	headers: {
+     //          	'Accept': 'application/json',
+     //            'Content-Type': ' application/json',
+     //            'X-API-KEY': 'CODEX@123',
+     //            'Authorization': 'Basic YWRtaW46MTIzNA==',
+     //        },
+     //        body: JSON.stringify({
+     //        	id: "123"
+		   //  })
+     //    })
+	    // .then(res => res.json())
+	    // .then(
+	    //     (result) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         items: result
+	    //       });
+	    //     },
+	    //     (error) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         error
+	    //       });
+	    //     }
+	    // )
+	    // fetch("http://dev.vn/api/home/users",{
+     //      	method: "PUT",
+     //      	headers: {
+     //          	'Accept': 'application/json',
+     //            'Content-Type': ' application/json',
+     //            'X-API-KEY': 'CODEX@123',
+     //            'Authorization': 'Basic YWRtaW46MTIzNA==',
+     //        },
+     //        body: JSON.stringify({
+     //        	id: "123"
+		   //  })
+     //    })
+	    // .then(res => res.json())
+	    // .then(
+	    //     (result) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         items: result
+	    //       });
+	    //     },
+	    //     (error) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         error
+	    //       });
+	    //     }
+	    // )
+	    // fetch("http://dev.vn/api/home/users",{
+     //      	method: "PATCH",
+     //      	headers: {
+     //          	'Accept': 'application/json',
+     //            'Content-Type': ' application/json',
+     //            'X-API-KEY': 'CODEX@123',
+     //            'Authorization': 'Basic YWRtaW46MTIzNA==',
+     //        },
+     //        body: JSON.stringify({
+     //        	id: "123"
+		   //  })
+     //    })
+	    // .then(res => res.json())
+	    // .then(
+	    //     (result) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         items: result
+	    //       });
+	    //     },
+	    //     (error) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         error
+	    //       });
+	    //     }
+	    // )
+	    // fetch("http://dev.vn/api/home/users",{
+     //      	method: "DELETE",
+     //      	headers: {
+     //          	'Accept': 'application/json',
+     //            'Content-Type': ' application/json',
+     //            'X-API-KEY': 'CODEX@123',
+     //            'Authorization': 'Basic YWRtaW46MTIzNA==',
+     //        },
+     //        body: "id=123&name=asd asdd",
+     //    })
+	    // .then(res => res.json())
+	    // .then(
+	    //     (result) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         items: result
+	    //       });
+	    //     },
+	    //     (error) => {
+	    //       this.setState({
+	    //         isLoaded: true,
+	    //         error
+	    //       });
+	    //     }
+	    // )

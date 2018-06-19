@@ -1,0 +1,252 @@
+section.body{		
+	.history-slide-block{
+		margin-bottom: 30px;
+		.history-slide{
+			position: relative;
+			.owl-item{
+				.slide-item{
+					.history-timeline{
+						position: relative;
+						display: inline-block;
+						padding:0;
+						width: 100%;
+						&:before{
+							content:"";
+							position: absolute;
+							height: calc(100% - 332px);
+							width: 1px;
+							top: 62px;
+							left: 50%;
+							transform: translateX(-50%);
+							@include border(2px,lighten($dark,50%),r);
+						}
+						.history-node{
+							display: block;
+							width: 100%;
+							min-height: 200px;
+							.history-bar{
+								display: block;
+								width: 50%;
+								overflow: hidden;
+								padding: 2rem;
+								.history-year{
+									position: relative;
+									display: block;
+									width: 100%;
+									text-align: right;
+									padding: 1rem;
+									color: $secondary;
+									&:before{
+										content:"";
+										position: absolute;
+										width: 34px;
+										left: 100%;
+										top: 50%;
+										transform: translateY(-50%);
+										@include border(2px,lighten($dark,50%),t);
+									}
+									&:after{
+										content:"";
+										position: absolute;
+										width: 10px;
+										height: 10px;
+										left: 100%;
+										top: 50%;
+										transform: translateY(-50%);
+										background-color: lighten($dark,50%);
+										@include radius(50%,a);
+									}
+								}
+								.history-item{
+									min-height: 200px;
+									background-position: left center;
+									background-size:contain!important;
+									background-repeat: no-repeat!important;
+									background-color:$light!important;
+									h4{
+										small{
+											display: block;
+											width: 50%!important;
+											float: right;
+										}
+									}
+								}
+							}
+							&:nth-child(even){
+								.history-bar{
+									float:right;
+									.history-year{
+										text-align: left;
+										&:before{
+											right: 100%;
+											left: auto;
+										}
+										&:after{
+											right: 100%;
+											left: auto;
+										}
+									}
+									.history-item{
+										background-position: right center!important;
+										h4{
+											small{
+												float: left;
+											}
+										}
+									}
+								}
+							}	
+						}
+					}
+					// .history-timeline{
+					// 	padding:0;
+					// 	.history-node{
+					// 		position: relative;
+					// 		display: block;
+					// 		width: 100%;
+					// 		min-height: 334px;
+					// 		margin-left: 1px;
+					// 		// @include border(2px,lighten($dark,50%),r);
+					// 		// &:first-child{
+					// 		// 	&:before{
+					// 		// 		content:"";
+					// 		// 		position: absolute;
+					// 		// 		height: 62px;
+					// 		// 		top:0;
+					// 		// 		left: 100%;
+					// 		// 		// @include border(2px,$background,r);
+					// 		// 	}
+					// 		// }
+					// 		// &:last-child{
+					// 		// 	&:before{
+					// 		// 		content:"";
+					// 		// 		position: absolute;
+					// 		// 		height: calc(334px - 62px);
+					// 		// 		bottom:0;
+					// 		// 		right: 100%;
+					// 		// 		// @include border(1px,$background,l-r);
+					// 		// 	}
+					// 		// }
+					// 		.history-bar{
+					// 			display: block;
+					// 			width: 50%;
+					// 			.history-year{
+					// 				position: relative;
+					// 				display: block;
+					// 				width: 100%;
+					// 				text-align: right;
+					// 				padding: 1rem;
+					// 				color: $secondary;
+					// 				&:before{
+					// 					content:"";
+					// 					position: absolute;
+					// 					width: 34px;
+					// 					left: 100%;
+					// 					top: 50%;
+					// 					transform: translateY(-50%);
+					// 					// @include border(2px,lighten($dark,50%),t);
+					// 				}
+					// 				&:after{
+					// 					content:"";
+					// 					position: absolute;
+					// 					width: 10px;
+					// 					height: 10px;
+					// 					left: 100%;
+					// 					top: 50%;
+					// 					transform: translateY(-50%);
+					// 					background-color: lighten($dark,50%);
+					// 					@include radius(50%,a);
+					// 				}
+					// 			}
+					// 			.history-item{
+					// 				min-height: 200px;
+					// 				background-position: left center;
+					// 				background-size:contain!important;
+					// 				background-repeat: no-repeat!important;
+					// 				background-color:$light!important;
+					// 				h4{
+					// 					small{
+					// 						display: block;
+					// 						width: 50%!important;
+					// 						float: right;
+					// 					}
+					// 				}
+					// 			}
+					// 		}
+					// 		&:nth-child(even){
+					// 			border: none!important;
+					// 			margin-left: 0!important;
+					// 			margin-right: 1px;
+					// 			// @include border(2px,lighten($dark,50%),l);
+					// 			.history-bar{
+					// 				float: right;
+					// 				.history-year{
+					// 					text-align: left;
+					// 					&:before{
+					// 						right: 100%;
+					// 						left: auto!important;
+					// 					}
+					// 					&:after{
+					// 						left: auto;
+					// 						right: 100%;
+					// 					}
+					// 				}
+					// 				.history-item{
+					// 					background-position: right center!important;
+					// 					background-size:contain!important;
+					// 					background-repeat: no-repeat!important;
+					// 					background-color:$light!important;
+					// 					h4{
+					// 						small{
+					// 							float: left;
+					// 						}
+					// 					}
+					// 				}
+					// 			}
+					// 		}
+					// 	}
+					// }
+				}
+			}
+			.owl-nav{				
+				.owl-prev{
+					background: transparent;
+					position: absolute;
+					top:50%;
+					transform: translateY(-50%);
+					left:-10%;
+					i.fa{
+						font-size: 5rem;
+						color:$dark;
+					}
+				}
+				.owl-next{
+					background: transparent;
+					position: absolute;
+					top:50%;
+					transform: translateY(-50%);
+					right:-10%;
+					i.fa{
+						font-size: 5rem;
+						color:$dark;
+					}
+				}
+			}
+			.owl-dots{
+				position: absolute;
+				width: 100%;
+				top: 100%;
+				color:$dark;
+				left:0;
+				.owl-dot{
+					margin: 0 5px;
+					&.active{
+						i.fa::before{
+							content: "\f111";
+						}
+					}
+				}
+			}
+		}
+	}
+}

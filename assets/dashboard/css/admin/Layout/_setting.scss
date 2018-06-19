@@ -1,0 +1,93 @@
+section.header{
+	&.setting-ctl{
+		min-height: 161px; 
+	}
+	.setting-menu{
+		background-color: white;
+		min-height: 64px;
+		line-height:64px;
+		overflow: hidden;
+		position:fixed;
+	    z-index: 1030;
+		width: 100%;
+		top:97px;
+		left:0;
+		.col-1.left-padding{		
+			background-color:$dark;
+			padding-right:0;
+			min-height: 64px;
+		}
+		.col-11.right-menu{	
+			padding:0;
+			a.tab-title{
+				font-family:"Roboto-Light", sans-serif, Helvetica, Arial, sans-serif;
+				background-color:$secondary-1;
+				text-transform: uppercase;
+				display:block;
+				text-align: center;
+				font-size: 14px;
+				width: 230px;
+				color:white;
+				min-height: 64px;
+			}
+		}
+	}
+}
+section.body{	
+	.col-11.right-content{
+		.setting-content{
+			.page-title{
+				font-family:"Roboto-Light", sans-serif, Helvetica, Arial, sans-serif;
+				color:$primary-2; 
+				small{
+					display: block;
+					color: $text-color;
+					font-size: 0.75rem;
+				}
+				margin-bottom: 62px; 
+			}
+			.card.setting-form{
+				.card-body{
+					h3.card-title{
+						font-family:"Roboto-Light", sans-serif, Helvetica, Arial, sans-serif;
+						margin-bottom: 0;
+					}
+				}
+				.card-choose{
+					padding: 40px 0;
+					.form-group{
+						select.form-control{
+							background-color:$dark-2!important;
+							background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMjdweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgMjcgMTUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI3IDE1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiM4MDgyODUiIGQ9Ik0yNi43MzUsMi43MjlMMTQuMTIyLDE0Ljc0N2MtMC4zNTIsMC4zMzctMC44OTIsMC4zMzctMS4yNDUsMEwwLjI2NCwyLjcyOQ0KCWMtMC4zNTItMC4zMzYtMC4zNTItMC44NTIsMC0xLjE4OGwxLjM1NC0xLjI5YzAuMzUyLTAuMzM1LDAuODk0LTAuMzM1LDEuMjQ1LDBMMTMuNSwxMC4zODlMMjQuMTM5LDAuMjUxDQoJYzAuMzUxLTAuMzM1LDAuODkzLTAuMzM1LDEuMjQ0LDBsMS4zNTMsMS4yOUMyNy4wODgsMS44NzcsMjcuMDg4LDIuMzkzLDI2LjczNSwyLjcyOXoiLz4NCjwvc3ZnPg0K);
+							background-repeat:no-repeat!important;
+							background-position: 97% center!important;
+							padding: 21px 10px;
+							font-family:"Roboto-Regular", sans-serif, Helvetica, Arial, sans-serif;
+							font-size: 18px;
+							outline: none;
+							border: 0;
+							line-height: 1.25rem;
+							height:64px;
+							color:$text-color;
+							-moz-appearance: none;
+						    -webkit-appearance: none;
+						    appearance: none;
+						  	&.selected{
+							  	background-color:transparent!important;
+							  	color:$primary-2;
+							  	@include border(1px,$border-color,a);
+						  	}
+						}
+					}
+					.btn-save-setting{
+						background-color:$primary-1;
+						text-transform: uppercase;
+						color: white;
+						width: 100%;
+						padding: 20px 0;
+					}					
+				}
+			}
+		}
+	}
+}

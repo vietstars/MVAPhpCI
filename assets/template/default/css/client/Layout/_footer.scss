@@ -1,0 +1,92 @@
+.footer{
+	background: $dark;
+ 	min-height:633px;
+ 	.top-logo{
+ 		background: lighten($dark,20%);
+ 		height: 50px;
+ 		.logo-container{
+ 			position: relative;
+ 			height: 50px;
+	 		img{
+	 			width: 120px;
+	 			position: absolute;
+	 			right:0;
+	 			top:10px;
+			}
+ 		}
+ 	}
+ 	.bottom-content{
+ 		padding-top: 60px;
+ 		.content-title{
+ 			color:$secondary;
+ 			text-transform:uppercase;
+ 			margin-bottom: 30px;
+ 		}
+ 		.model-link{
+ 			padding:0;
+ 			li{
+ 				a{
+ 					display: block;
+		 			color:$light;
+		 			text-transform:uppercase;
+		 			padding-bottom: 1rem;
+ 				}
+ 			}
+ 		}
+ 		.social-button{
+ 			margin-bottom: 30px;
+ 			.social-button{
+ 				color:$light;
+ 				margin: 0 30px;
+ 				font-size: 2.2rem;
+ 				cursor: pointer;
+ 				&:first-child{
+ 					margin-left: 0;
+ 				}
+ 				&:last-child{
+ 					margin-right: 0;
+ 				}
+ 			}
+ 		}
+ 		.subscribe-form{
+	 		.subscribe-email{
+				background:$dark;
+				color:$light;
+				outline: none!important;
+				padding-left:0;
+				border:0;
+				@include border(1px,$light,b);
+	 		}
+	 		button{
+	 			position: relative;
+	 			width:225px;
+	 			text-transform:uppercase;
+	 			background: transparent;
+				color:$primary;
+				@include border(2px,$primary,a);
+ 				@include transition(0.5s);
+	 			&:hover{
+ 					cursor: pointer;
+ 					color: $light;
+ 					background: $primary;
+	 				@include transition(0.5s);
+	 			}
+	 		}
+ 		}
+ 		.recommends-bar{
+ 			width:100%;
+ 			text-align: center;
+ 			padding: 10px 0;
+ 			color:$light;
+ 			font-family:$font-1;
+ 			@include border(1px,$light,'t-b');
+ 		}
+ 		.copyright{
+ 			margin-top: 30px;
+ 			width:100%;
+ 			text-align: center;
+ 			color: lighten($dark,20%);
+ 			font-family:$font-1;
+ 		}
+ 	}
+}

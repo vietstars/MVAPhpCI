@@ -1,0 +1,451 @@
+.social-bar{
+	position: fixed;
+	top:30%;
+	right:-65px;
+	display:block;
+	background:$light;
+	padding-right:0;
+	padding-left:30px;
+	overflow:hidden;
+	margin-bottom: 0;
+	z-index: 10;
+	@include shadow(-3px 3px 3px 0 rgba(0, 0, 0, 0.33));
+	&.active{
+		right:0;
+	}
+	li{
+		a{
+			display: block;
+			padding: 5px 10px;
+			margin: 10px;
+			@include border(1px,$dark,a);
+			@include transition(0.5s);
+			&:hover{
+				color:$light;
+				background:$secondary;
+				@include transition(0.5s);
+			}
+
+		}
+	}
+	.social-title{
+		position:absolute;
+		text-transform:uppercase;
+		background:$primary;
+		text-align: center;
+		width: 220%;
+		left:-84px;
+		top:85px;
+		@include rotate(-90deg);
+		@include transition(0.5s);
+		&:hover{
+			cursor:pointer;
+			background:$secondary;
+			@include transition(0.5s);
+		}
+	}
+}
+.header{
+	background: white;
+	max-height: 80px;
+	line-height: 80px;	
+	&.index-page{	
+		min-height: 100vh;
+		line-height: 20px;
+		background-size:cover!important;
+		background-position: center center!important;
+	}
+	&.aboutus-page,&.crc-page{
+		min-height: 500px;
+		line-height: 20px;
+		background-size:cover!important;
+		background-position: center center!important;
+		.gradient-bg{
+			min-height: 500px;
+		    background: -webkit-linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,.75));
+		    background: -o-linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,.75));
+		    background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,.75));
+		}
+	}
+	.navbar.menu-top.fixed-top{
+		background: $dark!important;
+		top: 1rem;
+		width: 100%;
+		min-height: 80px;
+		max-height: 80px;
+		padding-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		.navbar-nav{
+			li{
+			    a{
+					font-size: 0.875rem;
+					font-weight: 500;
+				    letter-spacing: 1px;
+				    line-height: 1rem;
+					min-height: 80px;
+					max-height: 80px;
+					line-height: 60px;
+				    text-transform: uppercase;
+					color: $light!important;
+					margin: 0 16px;
+					&:hover{
+						@include border(5px, $primary, 'b');
+					}
+					&.active{
+						@include border(5px, $primary, 'b');
+					}
+			    }
+			    &.dealer-item{
+			    	padding: 0 2rem;
+			    	background: $primary;
+			    	a{
+						margin: 0!important;
+						color: $dark!important;
+						&:hover{
+							border: 0!important;
+						}
+			    	}
+			    }			    
+			}
+		}
+	}
+	.container{	
+		.banner-text{
+			position: relative;
+			transform: translateY(250%);
+			width: 50%;
+			color:$light;
+			&.aboutus-text{
+				transform: translateY(300%);
+			}
+			&.contact-text{
+				transform: translateY(450%);
+				width: 70%;
+			}
+			&.news-text{
+				transform: translateY(120%);
+				width: 60%;
+			}
+			h1{
+			}
+			span{
+				font-family: $font-1;
+				font-weight: 300;
+				line-height: 30px;
+			}
+		}
+	}
+	.banner-top{
+		position: relative;	
+		min-height: 100vh;
+		color:$light;
+		.model-spec-text{
+			position: absolute;
+			width: 100%;
+			bottom: 15px;
+			.model-title{
+				color:$secondary;
+			}
+			.model-descript{
+			    font-size: 2.5rem;
+			    letter-spacing: 2px;
+			    line-height: 2.5rem;
+			    margin-bottom: 48px;
+			}
+			.models-list{
+				display: block;
+				padding-left:0;
+				min-height:30px;
+				margin-bottom: 15px;
+				li{
+					display: block;
+					float: left;
+					margin: 0 10px;
+					font-size: 90%;
+					&.active{
+						color:$primary;
+					}
+				}
+			}
+			.spec-list{
+				display: inline-block;
+				width: 100%;
+				background:$dark;
+				padding:10px;
+				font-family:$font-1;
+				li{
+					display: block;
+					min-height:73px;
+					float: left;	
+					h3{
+						font-family:$font-default;
+						color:$secondary;
+						small{
+							text-transform: uppercase;
+							display: block;
+							color:$light;
+							font-size: 39%;
+							padding-bottom: 5px;
+							margin-bottom: 5px;
+							@include border(1px,$light,b);
+						}
+					}				
+				}
+			}
+		}
+	}
+}
+.popover{	
+	border-radius:0;
+	overflow:hidden;
+	.arrow{
+		display:none;
+	}
+	&.bs-popover-bottom{
+		margin-top:0;
+	}
+	.popover-body{
+		border-radius: 0!important;
+		min-width: 9rem;
+		padding:0;
+		&.social-btn{
+			min-width: 32px;
+		}
+		a.language-item{
+			display: block;
+			min-height: 30px;
+			max-height: 30px;
+			line-height: 30px;
+			color:$primary!important;
+			border: 0;
+			padding: 0 1rem;
+			margin: 0;
+			@include transition(0.5s);
+			&:hover{
+				background: lighten($primary,40%);
+				border: 0!important;
+				@include transition(0.5s);
+			}
+		}
+		a.share-item{
+			display: block;
+			color:$primary!important;
+			border: 0;
+			padding: 10px;
+			margin: 0;
+			@include transition(0.5s);
+			&:hover{
+				background: lighten($primary,40%);
+				border: 0!important;
+				@include transition(0.5s);
+			}
+		}
+	}
+	&.top-menu{
+		position: fixed!important;
+		top:96px;
+		background: transparent;
+		transform: translate3d(0px, 96px, 0px)!important;
+		min-width: 100%;
+		padding:0;
+		border:0;
+		.pages-link{
+			padding: 0;
+			margin-top: 14px;
+			margin-botom: 14px;
+			min-height: 315px;
+			@include border(2px,$border-color,r);
+			h6{
+				margin-top: 15px;
+				text-transform: uppercase;
+				font-size: 0.875rem;
+			    font-weight: 500;
+			    letter-spacing: 1px;
+			    font-family: $font-default;
+			}
+			li{
+				display: block;
+				text-transform: uppercase;
+				a{
+					display:block;
+					padding: 10px;
+					&.active{
+						color:$primary;
+						line-height: 1.5;
+						font-weight:500;
+					}
+				}
+			}
+		}
+		.models-link{
+			padding: 0;
+			margin-top: 14px;
+			margin-botom: 14px;
+			min-height: 315px;
+			@include border(2px,$border-color,r);
+			h6{
+				margin-top: 30px;
+				margin-left: -15px;
+				text-transform: uppercase;
+				font-size: 0.875rem;
+			    font-weight: 500;
+			    letter-spacing: 1px;
+			    font-family: $font-default;
+			}
+			li{
+				display: block;
+				a{
+					display:block;
+					padding: 5px 10px;
+					&.active{
+						color:$primary;
+						line-height: 1.5;
+						font-weight:400;
+					}
+					&:hover{
+						color:$primary;
+						font-weight:400;
+					}
+				}
+			}
+		}
+		.models-content{
+			display:none;
+			&.active{
+				display: block;
+			}
+			.models-bar{
+				
+			}
+			.model-specification{
+				position: relative;
+				display:none;
+				background-color:$light;
+				background-position: right -50px!important;
+				background-repeat: no-repeat!important;
+				background-size:contain!important;
+				&.active{
+					display: block;
+				}
+				h3{
+					display:block;					
+					text-transform: uppercase;
+					font-weight: 700;
+					margin-bottom: 80px;
+				}
+				h6{
+					margin-top: 30px;
+					display:block;					
+					text-transform: uppercase;
+					color:$secondary;
+				}
+				ul.row{
+					width: 75%;
+					padding: 0;
+					li{
+						display: block;
+						h3{
+							margin-bottom: 30px;
+							small{
+								display:block;					
+								text-transform: uppercase;
+								padding-bottom: 8px;
+								margin-bottom: 8px;
+								font-size: 45%;
+								font-weight: 500;
+							}
+						}
+					}
+				}
+				img{
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 300px;
+				}
+			}
+		}
+		.topmenu-aboutus,.topmenu-history,.topmenu-news,.topmenu-crc,.topmenu-contact{
+			display:none;
+			background-position: center right!important;
+			background-repeat: no-repeat!important;
+			background-size:contain!important;
+			&.active{
+				display: block;
+			}
+			.read-more{
+				text-transform:uppercase;
+				color:$primary;
+				font-weight: 500;
+			}
+			.with-top-border{
+				margin-top: 15px;
+				@include border(1px,$border-color,t);
+			}
+			.aboutus-content,.contact-content,.news-content{
+				padding-top: 15px;
+				width: 60%;
+				text-transform: uppercase;
+				&.news-content{
+					width: 70%;
+				}
+				small{
+					margin-top: 15px;
+					display:block;
+					font-family:$font-1;
+					font-size: 50%;
+					text-transform: initial;
+				}
+			}
+			.his-detail{
+				margin-top: 15px;
+				width: 60%;
+				div.eq-height{
+					padding: 0 30px;
+					.border-his{
+						position: relative;
+						padding-top: 90%;
+						width: 100%;
+						height: 0;
+						@include border(5px,$dark,a);
+						img{
+							position: absolute;
+							background:$light;
+							display: block;
+							left: -16px;
+							top: -16px;
+							width: 32px;
+							height: 32px;
+							padding: 8px;
+						}
+						span{
+						    position: absolute;
+							display:block;
+							color:$secondary;
+							line-height: 1.2;
+							font-weight:500;
+							font-size:120%;
+							height: 100%;
+							width: 80%;
+							left: 50%;
+							top: 15px;
+						    white-space: pre-wrap;
+						    transform:translateX(-50%);
+						}
+					}
+				}
+			}
+			.contact-detail{
+				padding: 0;
+				.contact-item{
+					display:block;
+					padding: 15px;
+					img{
+						margin-right: 15px;
+					}
+				}
+			}
+		}
+	}
+} 

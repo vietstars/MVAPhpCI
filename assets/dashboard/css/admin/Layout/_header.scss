@@ -1,0 +1,47 @@
+section.header{
+	background: white;
+	min-height: 96.2px;
+	line-height: 96px;
+	nav.navbar{
+		background: white;
+		padding: 0 0.75rem;
+		@include border(1px,$border-color,b) ;
+		.navbar-brand{
+			padding:0;
+		}
+		.navbar-nav{
+			.nav-item{
+				&.nav-link{
+					padding-top:0;					
+					padding-bottom:0;
+				}
+				.avatar-group{
+					position: relative;
+					display: inline-block;
+					img{
+						width: 60px;
+						height: 60px;
+						@include radius(50%,a);
+					}
+					span.icon-drop{						
+						display: inline-block;
+						position:absolute;
+						width: 16px;
+						height: 16px;
+						bottom: 12px;
+						right: 0;
+						color: white;
+						line-height: 20px;
+						i{
+							background-color:$primary-1;
+							@include radius(50%,a);
+						}
+					}
+				}
+				.user-name{
+					color:$primary-2;
+				}
+			}
+		}
+	}
+}

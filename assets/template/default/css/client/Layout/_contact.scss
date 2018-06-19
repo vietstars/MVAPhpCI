@@ -1,0 +1,84 @@
+section.body{
+	min-height: 950px;
+	.detail-block{
+		min-height: 950px;
+		@include border(1px,$border-color,b);
+		.detail-bar{
+			position: relative;
+			.tab-content{
+				height:950px;
+				.tab-pane{
+					.row{
+						.detail-map{
+							height:950px;
+						}
+						.detail-content{
+							color:$light;
+							padding-right: 120px;
+							padding-left: 90px;	
+							padding-bottom: 32px;							
+							h2{
+								text-transform: uppercase;
+							    letter-spacing: 1px;
+							    margin-top: 100px;
+							    margin-bottom: 15px;
+							    color: lighten($secondary,2%);
+							    font-size: 1.8rem;
+							}
+							span{
+								color:$light;
+								font-family:$font-1;
+							}
+							ul{
+								padding: 30px 0;
+								li{
+									display:block;
+									font-family:$font-1;
+									font-size: 90%;
+									padding: 10px;
+									img{
+										margin-right: 15px;
+									}
+								}
+							}
+							a.btn.btn-outline-primary{
+								@include border(1px,$primary,a);
+								text-transform: uppercase;
+								color: $primary;
+								padding-left: 30px;
+								padding-right: 30px;
+								&:hover{
+									background:$primary;
+									color:$light;
+								}
+							}
+						}
+					}
+				}
+			}
+			.detail-nav{
+				position: absolute;
+				top:20px;
+				left:75px;
+				.nav-item{
+					a{
+						background: none;
+						border-radius:0;
+						padding:10px 15px;
+						text-transform: uppercase;
+						color:$light;
+						font-size: 80%;
+					    letter-spacing: 1px;
+    					white-space: nowrap;
+						&.active{
+							color:$primary;
+						}
+						&:hover{
+							color:$primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}

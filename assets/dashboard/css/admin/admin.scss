@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "Base/mixins";
+@import "Base/base";
+/*********************************************/
+@import "Layout/header";
+@import "Layout/home";
+@import "Layout/advisers";
+@import "Layout/message";
+@import "Layout/headerfooter";
+@import "Layout/executive";
+@import "Layout/newbikes";
+@import "Layout/blog";
+
+@import "Layout/index";
+@import "Layout/setting";
+@import "Layout/debtor";
+@import "Layout/monitoring";
+@import "Layout/accgroup";
+@import "Layout/stafffile";
+@import "Layout/chartacc";
+@import "Layout/stafflogin";
+@import "Layout/entries";
+@import "Layout/vinvoice";
+@import "Layout/journal";
+@import "Layout/receipt";
+@import "Layout/payment";
+@import "Layout/banking";
+@import "Layout/banking_transfer";
+@import "Layout/footer";
+@import "Layout/reponsive";
